@@ -16,7 +16,11 @@ function add(){
     localStorage.setItem("aqui", novo)
 }
 
-for()
+
+while(localStorage.getItem("aqui") != null){
+    tarefa.appendChild(localStorage.getItem("aqui"))
+    localStorage.removeItem("aqui")
+}
 
 butao.addEventListener("click", add)
 
